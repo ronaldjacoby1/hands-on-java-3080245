@@ -11,7 +11,7 @@ public class Authenticator {
 
     if (password.equals(customer.getPassword())) {
       customer.setAuthenticated(true);
-      return Customer;
+      return customer;
     } else throw new LoginException("Incorrect Password");
   }
 
